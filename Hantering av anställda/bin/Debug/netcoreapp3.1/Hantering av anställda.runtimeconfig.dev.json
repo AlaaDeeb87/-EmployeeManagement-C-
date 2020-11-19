@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\alaas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\alaas\\.nuget\\packages"
+    ]
+  }
+}

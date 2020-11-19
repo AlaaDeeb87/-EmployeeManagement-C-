@@ -1,0 +1,13 @@
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\bin\Debug\netcoreapp3.1\Hantering av anställda.exe
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\bin\Debug\netcoreapp3.1\Hantering av anställda.deps.json
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\bin\Debug\netcoreapp3.1\Hantering av anställda.runtimeconfig.json
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\bin\Debug\netcoreapp3.1\Hantering av anställda.runtimeconfig.dev.json
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\bin\Debug\netcoreapp3.1\Hantering av anställda.dll
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\bin\Debug\netcoreapp3.1\Hantering av anställda.pdb
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\obj\Debug\netcoreapp3.1\Hantering av anställda.csprojAssemblyReference.cache
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\obj\Debug\netcoreapp3.1\Hantering av anställda.AssemblyInfoInputs.cache
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\obj\Debug\netcoreapp3.1\Hantering av anställda.AssemblyInfo.cs
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\obj\Debug\netcoreapp3.1\Hantering av anställda.csproj.CoreCompileInputs.cache
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\obj\Debug\netcoreapp3.1\Hantering av anställda.dll
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\obj\Debug\netcoreapp3.1\Hantering av anställda.pdb
+C:\Users\alaas\source\repos\Hantering av anställda\Hantering av anställda\obj\Debug\netcoreapp3.1\Hantering av anställda.genruntimeconfig.cache

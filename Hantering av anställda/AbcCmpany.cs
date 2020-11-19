@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Collection
 {
-    public class properties
+    public class AbcCmpany
     {
 
         public int emp_Id { get; set; }

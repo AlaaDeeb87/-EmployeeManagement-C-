@@ -6,7 +6,9 @@ namespace Hantering_av_anställda
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EmployeeManagement emloyee = new EmployeeManagement();
+            emloyee.employeeManagement();
+           
         }
     }
 }
