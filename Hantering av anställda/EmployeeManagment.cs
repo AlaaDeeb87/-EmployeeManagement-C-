@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Hantering_av_anställda
 {
-    class EmployeeManagement
+   public class EmployeeManagement
     {
         public static string filename = @"C:\Users\alaas\OneDrive\Skrivbord\EmployeeManagment.csv";
         public void employeeManagement()
@@ -105,6 +105,7 @@ namespace Hantering_av_anställda
             } while (ans == 'y' || ans == 'Y');
         }
 
+        
 
         public void Function_Add_Employee(List<AbcCmpany> employeeList)
         {
@@ -122,9 +123,9 @@ namespace Hantering_av_anställda
             Console.Write("Enter Employee Designation:");
             obj_Comapny1.emp_Designation = Console.ReadLine();
             outFile.WriteLine(obj_Comapny1.emp_Designation);
-            outFile.Close();
             employeeList.Add(obj_Comapny1);
             Console.WriteLine("Employee Deatil Added Successfully...!!!!:");
+            outFile.Close();
         }
 
         public void Function_Display_Employee(List<AbcCmpany> employeeList)
@@ -150,6 +151,7 @@ namespace Hantering_av_anställda
         {
             Console.WriteLine("Chose Option for Modify Employee Detail:");
             Console.WriteLine("1.Id 2.Name 3.Address 4.Designation");
+            StreamWriter outFile = File.AppendText(filename);
             int modify_number = Convert.ToInt32(Console.ReadLine());
             switch (modify_number)
             {
@@ -177,7 +179,9 @@ namespace Hantering_av_anställda
                     Console.WriteLine("Invalide Choise....");
                     break;
             }
-            // employeeList.Add(obj_Modify);
+            outFile.WriteLine(obj_Modify);
+            outFile.Close();
+            
         }
 
         public void Function_Remove(List<AbcCmpany> employeeList, AbcCmpany obj_Modify)
