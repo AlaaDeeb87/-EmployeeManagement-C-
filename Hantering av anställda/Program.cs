@@ -1,12 +1,10 @@
-﻿using Collection;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace Hantering_av_anställda
 {
     class Program
     {
-       public static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Admin type 1\nEmployee type 2");
             int num = int.Parse(Console.ReadLine());
@@ -18,13 +16,10 @@ namespace Hantering_av_anställda
             }
             else if (num==2)
             {
-                EmployeeManagement obj_Company = new EmployeeManagement();
-                List<AbcCmpany> employeeList = new List<AbcCmpany>();
-                EmployeeManagement emloyee = new EmployeeManagement();
-                obj_Company.Function_Display_Employee(employeeList);
+                Employee.EmployeeRights();
             }
-           
-           
+            
+
         }
   
     }

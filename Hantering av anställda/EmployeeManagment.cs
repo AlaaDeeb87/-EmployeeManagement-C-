@@ -42,7 +42,7 @@ namespace Hantering_av_anställda
                         break;
                     case 3:
                         Console.WriteLine("Enter Employee Id Which You Want To Search:");
-                        search_Id = Convert.ToInt32(Console.ReadLine());
+                        search_Id = int.Parse(Console.ReadLine());
                         AbcCmpany obj_search = obj_Company.Function_Search(employeeList, search_Id);
                         if (obj_search != null)
                         {
@@ -58,7 +58,7 @@ namespace Hantering_av_anställda
                         break;
                     case 4:
                         Console.WriteLine("Enter Employee Id Which You Want To Search:");
-                        search_Id = Convert.ToInt32(Console.ReadLine());
+                        search_Id = int.Parse(Console.ReadLine());
                         AbcCmpany obj_Modify = obj_Company.Function_Search(employeeList, search_Id);
                         if (obj_Modify != null)
                         {
@@ -77,7 +77,7 @@ namespace Hantering_av_anställda
                         break;
                     case 5:
                         Console.WriteLine("Enter Employee Id Which You Want To Search:");
-                        search_Id = Convert.ToInt32(Console.ReadLine());
+                        search_Id = int.Parse(Console.ReadLine());
                         AbcCmpany obj_Delete = obj_Company.Function_Search(employeeList, search_Id);
                         if (obj_Delete != null)
                         {
@@ -105,7 +105,7 @@ namespace Hantering_av_anställda
             } while (ans == 'y' || ans == 'Y');
         }
 
-        
+      
 
         public void Function_Add_Employee(List<AbcCmpany> employeeList)
         {
@@ -152,12 +152,12 @@ namespace Hantering_av_anställda
             Console.WriteLine("Chose Option for Modify Employee Detail:");
             Console.WriteLine("1.Id 2.Name 3.Address 4.Designation");
             StreamWriter outFile = File.AppendText(filename);
-            int modify_number = Convert.ToInt32(Console.ReadLine());
+            int modify_number = int.Parse(Console.ReadLine());
             switch (modify_number)
             {
                 case 1:
                     Console.WriteLine("Enter New Employee Id:");
-                    int new_Id = Convert.ToInt32(Console.ReadLine());
+                    int new_Id = int.Parse(Console.ReadLine());
                     obj_Modify.emp_Id = new_Id;
                     break;
                 case 2:
