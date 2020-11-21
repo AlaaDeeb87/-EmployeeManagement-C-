@@ -8,7 +8,7 @@ namespace Hantering_av_anställda
 {
    public class EmployeeManagement
     {
-        public static string filename = @"C:\Users\alaas\OneDrive\Skrivbord\EmployeeManagment.csv";
+        private static readonly string _path = "EmployeeManagement.csv";
         public void employeeManagement()
         {
             EmployeeManagement obj_Company = new EmployeeManagement();
@@ -27,7 +27,7 @@ namespace Hantering_av_anställda
                 Console.WriteLine("6. Exit");
                 Console.WriteLine("----------------------------------------------------------------------------------------");
                 Console.Write("Enter Your Choise Here:-");
-                int choose_number = Convert.ToInt32(Console.ReadLine());
+                int choose_number = int.Parse(Console.ReadLine());
 
                 switch (choose_number)
                 {
@@ -109,10 +109,10 @@ namespace Hantering_av_anställda
 
         public void Function_Add_Employee(List<AbcCmpany> employeeList)
         {
-            StreamWriter outFile = File.AppendText(filename);
+            StreamWriter outFile = File.AppendText(_path);
             AbcCmpany obj_Comapny1 = new AbcCmpany();
             Console.Write("Enter Employee Id:");
-            obj_Comapny1.emp_Id = Convert.ToInt32(Console.ReadLine());
+            obj_Comapny1.emp_Id = int.Parse(Console.ReadLine());
             outFile.WriteLine(obj_Comapny1.emp_Id);
             Console.Write("Enter Employee Name:");
             obj_Comapny1.emp_Name = Console.ReadLine();
@@ -126,6 +126,7 @@ namespace Hantering_av_anställda
             employeeList.Add(obj_Comapny1);
             Console.WriteLine("Employee Deatil Added Successfully...!!!!:");
             outFile.Close();
+
         }
 
         public void Function_Display_Employee(List<AbcCmpany> employeeList)
@@ -151,7 +152,7 @@ namespace Hantering_av_anställda
         {
             Console.WriteLine("Chose Option for Modify Employee Detail:");
             Console.WriteLine("1.Id 2.Name 3.Address 4.Designation");
-            StreamWriter outFile = File.AppendText(filename);
+            StreamWriter outFile = File.AppendText(_path);
             int modify_number = int.Parse(Console.ReadLine());
             switch (modify_number)
             {
@@ -188,10 +189,12 @@ namespace Hantering_av_anställda
         {
             employeeList.Remove(obj_Modify);
             Console.WriteLine("1 Record Removed SuccessFully....!!!");
-            StreamWriter outFile = new StreamWriter(filename);
+            StreamWriter outFile = new StreamWriter(_path);
             outFile.WriteLine(obj_Modify);
             outFile.Close();
+            
         }
+        
     }
 
     
