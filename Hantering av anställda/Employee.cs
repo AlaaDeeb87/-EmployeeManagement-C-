@@ -8,8 +8,10 @@ namespace Hantering_av_anställda
 {
     public class Employee : EmployeeManagement
     {
+        
         public static void EmployeeRights()
         {
+
             Console.WriteLine("View Employee details type 1 \nModify Employee details type 2");
             int EmpInput = int.Parse(Console.ReadLine());
             EmployeeManagement obj_Company = new EmployeeManagement();

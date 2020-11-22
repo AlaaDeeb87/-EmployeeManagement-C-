@@ -11,8 +11,8 @@ namespace Hantering_av_anställda
         //public static readonly string path = @"EmployeeManagement.csv";
 
         //string AppFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData );
-        public string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
-        public string fileName = @"EmployeeManagement.csv";
+        public static readonly string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
+        public static readonly string  fileName = @"EmployeeManagement.csv";
         public void employeeManagement()
         {
             EmployeeManagement obj_Company = new EmployeeManagement();
